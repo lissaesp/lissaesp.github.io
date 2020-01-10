@@ -1,0 +1,29 @@
+<!doctype html>
+<head>
+<meta charset="UTF-8">
+<title>Questionnaire</title>
+
+<head>
+<body>
+<h3>Questionaire</h3>
+<script  type="text/javascript">
+ /* <![CDATA[ * /
+ /*variable declared and prompt the user to enter his or her information*/
+ var name = prompt("Please enter your first and last names: "," ");
+ var adress = prompt("Please enter your adress: "," ");
+ var occupation = prompt(Please enter your occupation: "," ");
+ 
+ /*Array for information the user entered*/
+ var info = [name,adress,occupation];
+ var text = "";
+ /*for loop to display the information to the website*/
+ for (var i = 0; i < info.length; i++) {
+  text += info[i] + "<br>";
+  }
+   document.writeln(text);
+   
+   /* ]]>*/
+   </script>
+   </body>
+   </html>
+ 
