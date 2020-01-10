@@ -1,0 +1,40 @@
+<!doctype html>
+<head>
+<meta charset="UTF-8">
+title> Number Check </title>
+<script type="text/javascript">
+ /* <![CDATA[ * /
+    function checkTheNumber()
+   {
+   var num = document.getElementById("theNumber).value;
+   var msg ="";
+   if (num >= 100)
+   {
+    msg = msg + "The number is greater than ";
+    msg = msg + "or equal to 100.";
+     alert (msg);
+     }
+     else
+     { 
+     if (num < 100)
+     {
+     msg = msg + "The number is less than ";
+     msg = msg + "100.";
+     
+     alert(msg);
+     }
+   }
+ }
+ /* ]]> */
+ </script>
+ </head>
+ <body>
+ <h3>Number Check</h3>
+ <form action="NUmberCheck.html" method="post"name="theFrom"
+ onsubmit="checkTheNumber(); return false;">
+ Enter a number: <input type="text" name="theNumber" id="theNumber" />
+ <br />
+ <br />
+ </form>
+ </body>
+ </html>
