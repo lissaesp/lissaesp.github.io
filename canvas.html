@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Canvas Sample</title>
+meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="canvasStyles.css" media="screen">
+</head>
+
+<body>
+<div id="maiDiv">
+<header>
+<h3>My Sample Canvas</h3>
+</header>
+<section>
+
+<h4>Here is my tag:</h4>
+
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+</section>
+<br></br>
+<footer>
+@2020</footer>
+</div>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+// Create gradient
+var grd = ctx.createLinearGradient(0,0,200,0);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"white");
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,150,80);
+</script>
+
+</body>
+</html>
