@@ -2,9 +2,54 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
+<title>Area Codes</title>
+  <script type="text/javascript">
+    /* <![CDATA[ * /
+    function check TheCode()
+   {
+   var msg= "";
+   var areaCode document.getElementById("theCode").option[document.getElementById("theCode").selectedIndex]
+ .value;
+ switch (parseInt(areaCode))
+ {
+ case 617:
+ msg = "Boston's area code is " + areaCode;
+ break;
+  
+  case 212:
+ msg = "Manhattan's area code is " + areaCode;
+ break;
+  
+  case 415:
+ msg = "San Fransisco's area code is " + areaCode;
+ break;
+  
+  case 813:
+ msg = "Tampa's area code is " + areaCode;
+ break;
+ 
+}
+ alert(msg);
+ }
+ /* ]]> */
+  </script>
+
 </head>
 
 <body>
-</body>
+  Select a City:
+  <form action="AreaCodes.html" method="post" name="theForm"
+        onsubmit="checkTheCode(); return false; ">
+    <select name="theCode" id="theCode">
+      <option value="">--Select a City--</option>
+       <option value="617">Boston</option>
+       <option value="212">Manhattan/option>
+       <option value="415">San Fransisco</option>
+        <option value="813">Tampa</option>
+    </select>
+    <br />
+        <br />
+<input type="submit" value="Check the Area Code" />
+  </form>
+    </body>
 </html>
