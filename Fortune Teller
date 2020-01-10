@@ -16,9 +16,9 @@
   <div id="fortune"></div>
 	<script>	var fortunes = [
   // add more array items here if you want, make sure you put a comma between each one. You can use HTML here! Just remember that if it contains quotes, they need to be escaped, like this: \"
-  "You will have 2 kids, married to mark, working as a fashion designer in florida", 
-	" You will be married to miriam, have 3 kids, you will be working in the Army in Dallas", 
-   " You will be married to Francisco, have 1 kid and be working as a teacher in California"		
+  "You will have 3 kids, married to albeiro, working as a model in Colombia", 
+	" You will be married to Aurelio, have 3 kids, you will be working in Dallas as a Bussines person", 
+   " You will be married to Lalo, have 6 kids and be working as a cheef in spain"		
 ];
 
 function tellFortune() {
